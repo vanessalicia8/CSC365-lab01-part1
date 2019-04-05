@@ -5,29 +5,39 @@ the_school = School()
 the_school.populate_student_array( "students.txt" )
 search_val = ""
 
-while ( True ):
 
-	userInput = input( "Enter search command: " )
+def prompt():
+   command = raw_input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
+   return command
 
-	if ( userInput == "Q:" or userInput == "Quit:" ):
-		break
 
-	elif ( userInput == "S:" or userInput == "Student:" ):
-		search_val = input()
-		print( search_val )
+def main():
+   command = prompt()
+   if(command == "Q" or command == "Quit"):
+      return
+   while (command != "Q" or command != "Quit"):
+      if ( command == "Q" or command == "Quit" ):
+         break
 
-	elif ( userInput == "T:" or userInput == "Teacher:" ):
-		search_val = input()
-		print( search_val )
+      elif ( command == "S" or command == "Student" ):
+         print( search_val )
 
-	elif ( userInput == "B:" or userInput == "Bus:" ):
-		search_val = input()
-		print( search_val )
+      elif ( command == "T" or command == "Teacher" ):
+         print( search_val )
 
-	elif ( userInput == "A:" or userInput == "Average:" ):
-		search_val = input()
-		print( search_val )
+      elif ( command == "B" or command == "Bus" ):
+         print( search_val )
 
-	elif ( userInput == "I" or userInput == "Info" ):
-		search_val = input()
-		print( search_val )
+      elif ( command == "A" or command == "Average" ):
+         print( search_val )
+
+      elif ( command == "I" or command == "Info" ):
+         print( search_val )
+
+      command = prompt()
+
+
+if __name__ == "__main__":
+   main()
+
+
