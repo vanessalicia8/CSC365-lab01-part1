@@ -10,54 +10,18 @@ def prompt():
    command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
    return command
 
-def print_info( studentList, optional = None ):
-   #takes a list of students that met the search criteria and prints the
-   #requested information
-
-   for student in studentList:
-      if ( optional == None ):
-         print( student.StLastName, ",", student.StFirstName, ",", 
-            student.Grade, ",", student.Classroom, ",", 
-            student.TLastName, ",", student.TFirstName )
-
-def handle_options( optionalArg = None ):
-   #Takes an optional argument that was provided by the user and returns
-   #a character representing that option, for use with other functions 
-   c = None
-
-   if ( optionalArg == 'B' or optionalArg == 'Bus' ):
-      c = 'B'
-   elif ( optionalArg == 'H' or optionalArg == 'High' ):
-      c == 'H'
-   elif ( optionalArg == 'L' or optionalArg == 'Low' ):
-      c == 'L'
-
-   return c
-
 def main():
 
    while ( True ):
 
       command = prompt()
       values = command.split()
-<<<<<<< HEAD
-      #Quit
-=======
-<<<<<<< HEAD
-      #Quit
-=======
-      numArgs = len( values )
 
->>>>>>> 4af2b517e3da6a9a38ce5449cb178bb319ea6cbf
->>>>>>> 93fefc03397e2530f46748a071e8ed1892378101
+      #Quit
       if ( values[0] == "Q" or values[0] == "Quit" ):
          break
       #Student
       elif ( values[0] == "S" or values[0] == "Student" ):
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 93fefc03397e2530f46748a071e8ed1892378101
          if (len(values) == 3):
             if(values[2] == "B" or values[2] == "Bus"):
                the_school.search_student_bus(values[1])
@@ -66,18 +30,6 @@ def main():
          else:
             the_school.search( 'S', values[1] )
       #Teacher
-<<<<<<< HEAD
-=======
-=======
-
-         if ( numArgs == 3 ):
-            c = handle_options( values[-1] )
-
-         students = the_school.search( 'S', values[1] )
-         print_info( students )
-
->>>>>>> 4af2b517e3da6a9a38ce5449cb178bb319ea6cbf
->>>>>>> 93fefc03397e2530f46748a071e8ed1892378101
       elif ( values[0] == "T" or values[0] == "Teacher" ):
          the_school.search( 'T', values[1] )
       #Bus
