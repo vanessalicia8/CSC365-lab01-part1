@@ -18,6 +18,9 @@ class Student:
 			self.StLastName, self.StFirstName, self.Grade, self.Classroom,
 			self.Bus, self.GPA, self.TLastName, self.TFirstName )
 
+	def to_String( self ):
+		return "Student: " +  self.StLastName + ", " + self.StFirstName + ", " + self.Grade + ", " + self.Classroom + ", " + self.Bus + ", " + self.GPA + ", " + self.TLastName + ", " + self.TFirstName
+
 	def get_member_var( self, c ):
 		#takes a character representing the type of member variable to
 		#return, returns that value
