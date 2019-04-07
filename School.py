@@ -60,7 +60,7 @@ class School:
 				if ( student.get_member_var( 'G' ) == aString ):
 					studentCount+= 1
 					allGPA += float(student.GPA)
-			print "\nGrade: " + aString + "\nAverage GPA: " + str(round(allGPA/studentCount, 2)) + "\n"
+			print( "\nGrade: " + aString + "\nAverage GPA: " + str(round(allGPA/studentCount, 2)) + "\n" )
 			return
 		else:
 			for student in self.student_array:
@@ -69,16 +69,16 @@ class School:
 
 		for student in students:
 			if(c == "S"):
-				print "\nStudent: " + student.StLastName + ", " + student.StFirstName + ", " + student.Grade + ", " + student.Classroom + ", " + student.TLastName + ", " + student.TFirstName + "\n"
+				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName + ", " + student.Grade + ", " + student.Classroom + ", " + student.TLastName + ", " + student.TFirstName + "\n" )
 			elif(c == "T"):
-				print "\nStudent: " + student.StLastName + ", " + student.StFirstName + "\n"
+				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName + "\n" )
 			elif(c == "G"):
-				print "\nStudent: " + student.StLastName + ", " + student.StFirstName + "\n"
+				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName + "\n" )
 			elif(c == "B"):
-				print "\nStudent: " + student.StLastName + ", " + student.StFirstName  + ", " + student.Grade + ", " + student.Classroom + "\n"
+				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName  + ", " + student.Grade + ", " + student.Classroom + "\n" )
 
 		if len(students) == 0:
-			print "\n"
+			print( "\n" )
 		return
 
 
@@ -95,10 +95,10 @@ class School:
 				students.append( student )
 
 		for student in students:
-			print "\nStudent: " + student.StLastName + ", " + student.StFirstName + ", " + student.Bus + "\n"
+			print( "\nStudent: " + student.StLastName + ", " + student.StFirstName + ", " + student.Bus + "\n" )
 
 		if len(students) == 0:
-			print "\n"
+			print( "\n" )
 		return
 
 	def grade_search( self, aString = None, oString = None ):
@@ -119,17 +119,17 @@ class School:
 				if(student.GPA > mystudent.GPA):
 					mystudent = student
 			
-			print "\n" + mystudent.to_String() + "\n"
+			print( "\n" + mystudent.to_String() + "\n" )
 
 		elif(oString == "L" or oString == "Low"):
 			for student in students:
 				if(student.GPA < mystudent.GPA):
 					mystudent = student
 			
-			print "\n" + mystudent.to_String() + "\n"
+			print( "\n" + mystudent.to_String() + "\n" )
 
 		if len(students) == 0:
-			print "\n"
+			print( "\n" )
 		return
 
 	def grade_info( self ):
@@ -155,13 +155,13 @@ class School:
 			elif ( student.get_member_var( 'G' ) == "6" ):
 				sixth += 1
 
-		print "\nGrade 0: " + str(kinder)
-		print "\nGrade 1: " + str(first)
-		print "\nGrade 2: " + str(second)
-		print "\nGrade 3: " + str(third)
-		print "\nGrade 4: " + str(fourth)
-		print "\nGrade 5: " + str(fifth)
-		print "\nGrade 6: " + str(sixth) + "\n"
+		print( "\nGrade 0: " + str(kinder) )
+		print( "\nGrade 1: " + str(first) )
+		print( "\nGrade 2: " + str(second) )
+		print( "\nGrade 3: " + str(third) )
+		print( "\nGrade 4: " + str(fourth) )
+		print( "\nGrade 5: " + str(fifth) )
+		print( "\nGrade 6: " + str(sixth) + "\n" )
 		return
 
 

@@ -15,6 +15,7 @@ def main():
    while ( True ):
 
       command = prompt()
+      print( "test" )
       values = command.split()
 
       #Quit
@@ -26,7 +27,7 @@ def main():
             if(values[2] == "B" or values[2] == "Bus"):
                the_school.search_student_bus(values[1])
             else:
-               print "\n" + values[2] + " is not a valid command\n"
+               print( "\n" + values[2] + " is not a valid command\n" )
          else:
             the_school.search( 'S', values[1] )
       #Teacher
@@ -41,7 +42,7 @@ def main():
             if(values[2] == "H" or values[2] == "L" or values[2] == "High" or values[2] == "Low"):
                the_school.grade_search( values[1], values[2] )
             else:
-               print "\n" + values[2] + " is not a valid command\n"
+               print( "\n" + values[2] + " is not a valid command\n" )
          else:
             the_school.search( 'G', values[1] )
       #Average
