@@ -2,7 +2,7 @@ from School import *
 from Student import *
 
 the_school = School()
-the_school.populate_student_array( "students2.txt" )
+the_school.populate_student_array( "students.txt" )
 search_val = ""
 
 
