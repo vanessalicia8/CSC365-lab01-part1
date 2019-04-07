@@ -21,16 +21,16 @@ def main():
       if ( values[0] == "Q" or values[0] == "Quit" ):
          break
       elif ( values[0] == "S" or values[0] == "Student" ):
-         print( search_val )
+         print( the_school.search( 'S', values[1] ) )
 
       elif ( values[0] == "T" or values[0] == "Teacher" ):
-         print( search_val )
+         print( the_school.search( 'T', values[1] ) )
 
       elif ( values[0] == "B" or values[0] == "Bus" ):
-         print( search_val )
+         print( the_school.search( 'B', values[1] ) )
 
       elif ( values[0] == "A" or values[0] == "Average" ):
-         print( search_val )
+         print( the_school.search( 'A', values[1] ) )
 
       elif ( values[0] == "I" or values[0] == "Info" ):
          print( search_val )

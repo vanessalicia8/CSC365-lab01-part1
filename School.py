@@ -45,18 +45,16 @@ class School:
 
 		return new_student
 
-	# def get_member_val( self, member_val ):
-	# 	#
+	def search( self, c, aString = None ):
+		#takes a character representing the student member variable to search
+		#by and a string representing the optional name or number field,
+		#returns a list of all the students matching the search, if the
+		#search yields no results an empty list is returned
+		
+		students = []
 
-	# def search( self, string, member_var ):
-	# 	#
-	# 	for student in self.student_array:
+		for student in self.student_array:
+			if ( student.get_member_var( c ) == aString ):
+				students.append( student )
 
-
-
-
-
-
-
-
-	#search functions go here
+		return students
