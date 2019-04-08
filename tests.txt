@@ -1,0 +1,145 @@
+// CSC 365. Spring 2019
+// Lab 1-1 test suite
+
+// TC-1
+// Tests Requirements R3 and R4
+// short form command name, existing student
+// expected output: Student: OBREIN, STAN, 6, 111 ,NISTENDIRK, NANCY
+
+S OBREIN
+
+// TC-2
+// Tests Requirements R3 and R4
+// long form command name, existing student
+// expected output: Student: OBREIN, STAN, 6, 111, NISTENDIRK,NANCY
+
+Student OBREIN
+
+// TC-3
+// Tests Requirements R3 and R5
+// short form command name, existing student, bus
+// expected output: Student: SARAO, DIEDRA, 52
+
+S SARAO B
+
+// TC-4
+// Tests Requirements R3 and R5
+// mixed form command name, existing student, bus
+// expected output: Student: SARAO, DIEDRA, 52
+
+S SARAO Bus
+
+// TC-5
+// Tests Requirements R3 and R5
+// mixed form command name, existing student, bus
+// expected output: Student: COMO, ZANDRA, 53
+
+Student COMO B
+
+// TC-6
+// Tests Requirements R3 and R5
+// long form command name, existing student, bus
+// expected output: Student: COMO, ZANDRA, 53
+
+Student COMO Bus
+
+// TC-7
+// Tests Requirements E1
+// long form command name, existing student, bus
+// expected output: Student: BUS is not a valid command
+
+Student COMO BUS
+
+// TC-8
+// Tests Requirements R6
+// short form command name, existing teacher
+// expected output:
+
+Student: COOKUS, XUAN
+
+Student: ELHADDAD, SHANTE
+
+Student: SWEDLUND, SHARRI
+
+Student: CIGANEK, MANIE
+
+Student: COVINGTON, TOMAS
+
+Student: EARLY, TORY
+
+Student: LINHART, LELA
+
+T FAFARD
+
+// TC-9
+// Tests Requirements R6
+// long form command name, existing teacher
+// expected output:
+
+Student: COOKUS, XUAN
+
+Student: ELHADDAD, SHANTE
+
+Student: SWEDLUND, SHARRI
+
+Student: CIGANEK, MANIE
+
+Student: COVINGTON, TOMAS
+
+Student: EARLY, TORY
+
+Student: LINHART, LELA
+
+Teacher FAFARD
+
+// TC-10
+// Tests Requirements R6
+// short form command name, grade
+// expected output:
+
+Student: SCHOENECKER, PHUONG
+
+Student: RACANELLO, NOEL
+
+Student: STERBACK, PETER
+
+Student: FINCHMAN, MATHILDA
+
+Student: ZAPPAVIGNA, ELLIOTT
+
+Student: OBREIN, STAN
+
+Student: CORONADO, DIMPLE
+
+Student: SAENPHIMMACHA, NUMBERS
+
+Student: BOYTER, WAN
+
+Student: BREVO, JANNETTE
+
+Student: CLECKLER, FLOY
+
+Student: KRAKE, VALENTIN
+
+Student: KEMERER, ROSETTA
+
+Student: BEAN, INGER
+
+Student: DEMARTINI, DEWAYNE
+
+Student: CREMEANS, RANDOLPH
+
+Student: FEYEREISEN, WILFREDO
+
+Student: WERST, LEON
+
+Student: LAMKIN, TAMA
+
+Student: KREESE, CARRIE
+
+Student: FRIEDSTROM, REED
+
+G 6
+
+
+
