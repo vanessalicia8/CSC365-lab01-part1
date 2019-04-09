@@ -15,7 +15,6 @@ def main():
    while ( True ):
 
       command = prompt()
-      print( "test" )
       values = command.split()
 
       #Quit

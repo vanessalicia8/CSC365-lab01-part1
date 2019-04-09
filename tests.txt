@@ -94,7 +94,7 @@ Teacher FAFARD
 
 // TC-10
 // Tests Requirements R6
-// short form command name, grade
+// short form command grade
 // expected output:
 
 Student: SCHOENECKER, PHUONG
@@ -140,6 +140,161 @@ Student: KREESE, CARRIE
 Student: FRIEDSTROM, REED
 
 G 6
+
+// TC-11
+// Tests Requirements R6
+// long form command grade
+// expected output:
+
+Student: SCHOENECKER, PHUONG
+
+Student: RACANELLO, NOEL
+
+Student: STERBACK, PETER
+
+Student: FINCHMAN, MATHILDA
+
+Student: ZAPPAVIGNA, ELLIOTT
+
+Student: OBREIN, STAN
+
+Student: CORONADO, DIMPLE
+
+Student: SAENPHIMMACHA, NUMBERS
+
+Student: BOYTER, WAN
+
+Student: BREVO, JANNETTE
+
+Student: CLECKLER, FLOY
+
+Student: KRAKE, VALENTIN
+
+Student: KEMERER, ROSETTA
+
+Student: BEAN, INGER
+
+Student: DEMARTINI, DEWAYNE
+
+Student: CREMEANS, RANDOLPH
+
+Student: FEYEREISEN, WILFREDO
+
+Student: WERST, LEON
+
+Student: LAMKIN, TAMA
+
+Student: KREESE, CARRIE
+
+Student: FRIEDSTROM, REED
+
+Grade 6
+
+// TC-12
+// Tests Requirements R8
+// short form command bus
+// expected output:
+
+Student: SWEDLUND, SHARRI, 3, 107
+
+Student: ZAPPAVIGNA, ELLIOTT, 6, 106
+
+Student: SAENPHIMMACHA, NUMBERS, 6, 111
+
+Student: BOYTER, WAN, 6, 102
+
+Student: KOZOLA, BUSTER, 2, 108
+
+Student: DEMARTINI, DEWAYNE, 6, 102
+
+Student: BEX, TAMESHA, 4, 105
+
+Student: WERST, LEON, 6, 111
+
+Student: LAMKIN, TAMA, 6, 111
+
+B 55
+
+// TC-13
+// Tests Requirements R8
+// long form command bus
+// expected output:
+
+Student: SCHOENECKER, PHUONG, 6, 109
+
+Student: FINCHMAN, MATHILDA, 6, 111
+
+Student: BRODERSEN, HYE, 3, 110
+
+Student: HAVIR, BOBBIE, 2, 108
+
+Student: MASSART, ELDON, 4, 105
+
+Student: GARTH, JOHN, 1, 103
+
+Student: CREMEANS, RANDOLPH, 6, 109
+
+Student: KREESE, CARRIE, 6, 109
+
+Bus 0
+
+// TC-14
+// Tests Requirements R9
+// short form command grade
+// expected output: Student: LAMKIN, TAMA, 3.23, NISTENDIRK, NANCY, 55
+
+G 6 H
+
+// TC-15
+// Tests Requirements R9
+// long form command grade
+// expected output: Student: LAMKIN, TAMA, 3.23, NISTENDIRK, NANCY, 55
+
+Grade 6 High
+
+// TC-16
+// Tests Requirements R9
+// mixed form command grade
+// expected output: Student: WICINSKY, TERESE, 3.22, HAMER, GAVIN, 53
+
+Grade 2 H
+
+// TC-17
+// Tests Requirements R9
+// mixed form command grade
+// expected output: Student: WICINSKY, TERESE, 3.22, HAMER, GAVIN, 53
+
+G 2 High
+
+// TC-18
+// Tests Requirements R9
+// short form command grade
+// expected output: Student: KOZOLA, BUSTER, 2.76, HAMER, GAVIN, 55
+
+G 2 L
+
+// TC-19
+// Tests Requirements R9
+// long form command grade
+// expected output: Student: KOZOLA, BUSTER, 2.76, HAMER, GAVIN, 55
+
+Grade 2 Low
+
+// TC-20
+// Tests Requirements R9
+// mixed form command grade
+// expected output: Student: KOZOLA, BUSTER, 2.76, HAMER, GAVIN, 55
+
+G 2 Low
+
+// TC-21
+// Tests Requirements R9
+// mixed form command grade
+// expected output: Student: KOZOLA, BUSTER, 2.76, HAMER, GAVIN, 55
+
+Grade 2 L
+
+
 
 
 

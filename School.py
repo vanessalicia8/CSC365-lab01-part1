@@ -38,7 +38,7 @@ class School:
 		GPA = tokens[5]
 		TLastName = tokens[6]
 		TFirstName = tokens[7]
-		TFirstName = TFirstName[0:]
+		TFirstName = TFirstName[0:-1]
 
 		new_student = Student( StLastName, StFirstName, Grade, Classroom,
 		    Bus, GPA, TLastName, TFirstName )
@@ -60,8 +60,12 @@ class School:
 				if ( student.get_member_var( 'G' ) == aString ):
 					studentCount+= 1
 					allGPA += float(student.GPA)
-			print( "\nGrade: " + aString + "\nAverage GPA: " + str(round(allGPA/studentCount, 2)) + "\n" )
-			return
+			if ( allGPA == 0 ):
+				print()
+				return
+			else:
+				print( "\nGrade: " + aString + "\nAverage GPA: " + str(round(allGPA/studentCount, 2)) + "\n" )
+				return
 		else:
 			for student in self.student_array:
 				if ( student.get_member_var( c ) == aString ):
@@ -118,15 +122,21 @@ class School:
 			for student in students:
 				if(student.GPA > mystudent.GPA):
 					mystudent = student
+
+			print( "\nStudent: " + mystudent.StLastName + ", " + mystudent.StFirstName + ", " + mystudent.GPA + ", " +\
+				mystudent.TLastName + ", " + mystudent.TFirstName + ", " + mystudent.Bus + "\n" )
 			
-			print( "\n" + mystudent.to_String() + "\n" )
+			#print( "\n" + mystudent.to_String() + "\n" )
 
 		elif(oString == "L" or oString == "Low"):
 			for student in students:
 				if(student.GPA < mystudent.GPA):
 					mystudent = student
+
+			print( "\nStudent: " + mystudent.StLastName + ", " + mystudent.StFirstName + ", " + mystudent.GPA + ", " +\
+				mystudent.TLastName + ", " + mystudent.TFirstName + ", " + mystudent.Bus + "\n" )
 			
-			print( "\n" + mystudent.to_String() + "\n" )
+			#print( "\n" + mystudent.to_String() + "\n" )
 
 		if len(students) == 0:
 			print( "\n" )
