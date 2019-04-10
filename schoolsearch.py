@@ -1,16 +1,20 @@
 from School import *
 from Student import *
 
-the_school = School()
-the_school.populate_student_array( "students.txt" )
-search_val = ""
-
-
 def prompt():
    command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
    return command
 
 def main():
+
+   the_school = School()
+   try:
+       the_school.populate_student_array( "students.txt" )
+   except( FileNotFoundError ):
+       print( "File was not found.\n" );
+       return
+
+   search_val = ""
 
    while ( True ):
 

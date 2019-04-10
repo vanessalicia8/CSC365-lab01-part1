@@ -11,18 +11,18 @@ class School:
 	#takes a file name. Reads in the students from the file and puts each
 	#student into the students_array
 
-	    with open( studentFile ) as file:
+	    try:
+	    	with open( studentFile ) as file:
+	    		while ( True ):
+	    			one_line = file.readline()
 
-	    	while ( True ):
-
-	    		one_line = file.readline()
-
-	    		if ( one_line == '' ):
-	    			break
-	    		else:
-	    			student = self.create_student( one_line )
-
-	    			self.student_array.append( student )
+	    			if ( one_line == '' ):
+	    				break
+	    			else:
+	    				student = self.create_student( one_line )
+	    				self.student_array.append( student )
+	    except:
+	    	raise
 
 	def create_student( self, lineFromFile ):
 		#takes a single line from the student file as a string. Creates a

@@ -301,6 +301,86 @@ Grade 2 L
 
 A 3.01
 
+// TC-23
+// Tests Requirements R10
+// short form command average
+// expected output: 
+
+Grade: 3
+Average GPA: 3.05
+
+A 3
+
+// TC-24
+// Tests Requirements R10
+// long form command average
+// expected output: 
+
+Grade: 6
+Average GPA: 2.98
+
+A 3
+
+// TC-25
+// Tests Requirements R11
+// short form command info
+// expected output: 
+
+Grade 0: 0
+
+Grade 1: 2
+
+Grade 2: 13
+
+Grade 3: 9
+
+Grade 4: 15
+
+Grade 5: 0
+
+Grade 6: 21
+
+I
+
+// TC-26
+// Tests Requirements R11
+// long form command info
+// expected output: 
+
+Grade 0: 0
+
+Grade 1: 2
+
+Grade 2: 13
+
+Grade 3: 9
+
+Grade 4: 15
+
+Grade 5: 0
+
+Grade 6: 21
+
+Info
+
+// TC-27
+// Tests Requirements R12
+// short form command quit
+// expected output: none
+
+Q
+
+// TC-28
+// Tests Requirements R11
+// long form command quit
+// expected output: none
+
+Quit
+
+
+
+
+
 
 
 
