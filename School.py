@@ -55,7 +55,7 @@ class School:
 		Classroom = tokens[3]
 		Bus = tokens[4]
 		GPA = tokens[5]
-      GPA = tokens[0:-1]
+        GPA = tokens[0:-1]
 
 		new_student = Student( StLastName, StFirstName, Grade, Classroom,
 		    Bus, GPA, "empty", "empty" )
@@ -71,7 +71,7 @@ class School:
 		TLastName = tokens[0]
 		TFirstName = tokens[1]
 		Classroom = tokens[3]
-      Classroom = tokens[0:-1]
+        Classroom = tokens[0:-1]
 
 		new_teacher = Teacher( TLastName, TFirstName, Classroom )
 
