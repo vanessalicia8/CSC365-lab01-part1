@@ -17,7 +17,7 @@ def main():
       the_school.populate_teacher_array( "teachers.txt" )
    except( FileNotFoundError ):
       print( "File was not found.\n" );
-         return
+      return
 
    search_val = ""
 

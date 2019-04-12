@@ -6,10 +6,10 @@ class School:
 	def __init__( self ):
 
 		self.student_array = []
-      self.teacher_array = []
+		self.teacher_array = []
          
          
-   def populate_teacher_array( self, teacherFile ):
+	def populate_teacher_array( self, teacherFile ):
    #takes a file name. Reads in the teachers from the file and puts each
    #teacher into the teacher_array
 
@@ -55,7 +55,7 @@ class School:
 		Classroom = tokens[3]
 		Bus = tokens[4]
 		GPA = tokens[5]
-      GPA = tokens[0:-1]
+		GPA = tokens[0:-1]
 
 		new_student = Student( StLastName, StFirstName, Grade, Classroom,
 		    Bus, GPA, "empty", "empty" )
@@ -70,8 +70,8 @@ class School:
 		tokens = lineFromFile.split( ',' )
 		TLastName = tokens[0]
 		TFirstName = tokens[1]
-		Classroom = tokens[3]
-      Classroom = tokens[0:-1]
+		Classroom = tokens[2]
+		Classroom = tokens[0:-1]
 
 		new_teacher = Teacher( TLastName, TFirstName, Classroom )
 
