@@ -1,6 +1,6 @@
 class Teacher:
 
-	def __init__( self, TLastName, TFirstName, Classroom )
+	def __init__( self, TLastName, TFirstName, Classroom ):
 
 	    self.TLastName = TLastName
 	    self.TFirstName = TFirstName

@@ -1,5 +1,6 @@
 #need a search function
 from Student import *
+from Teacher import *
 
 class School:
 
