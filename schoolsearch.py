@@ -9,10 +9,15 @@ def main():
 
    the_school = School()
    try:
-       the_school.populate_student_array( "students.txt" )
+       the_school.populate_student_array( "list.txt" )
    except( FileNotFoundError ):
        print( "File was not found.\n" );
        return
+   try:
+      the_school.populate_teacher_array( "teachers.txt" )
+   except( FileNotFoundError ):
+      print( "File was not found.\n" );
+         return
 
    search_val = ""
 

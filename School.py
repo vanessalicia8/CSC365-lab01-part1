@@ -6,10 +6,29 @@ class School:
 	def __init__( self ):
 
 		self.student_array = []
+      self.teacher_array = []
+         
+         
+   def populate_teacher_array( self, teacherFile ):
+   #takes a file name. Reads in the teachers from the file and puts each
+   #teacher into the teacher_array
+
+	    try:
+	    	with open( teacherFile ) as file:
+	    		while ( True ):
+	    			one_line = file.readline()
+
+	    			if ( one_line == '' ):
+	    				break
+	    			else:
+	    				teacher = self.create_teacher( one_line )
+	    				self.teacher_array.append( teacher )
+	    except:
+	    	raise
 
 	def populate_student_array( self, studentFile ):
 	#takes a file name. Reads in the students from the file and puts each
-	#student into the students_array
+	#student into the student_array
 
 	    try:
 	    	with open( studentFile ) as file:
@@ -36,14 +55,27 @@ class School:
 		Classroom = tokens[3]
 		Bus = tokens[4]
 		GPA = tokens[5]
-		TLastName = tokens[6]
-		TFirstName = tokens[7]
-		TFirstName = TFirstName[0:-1]
+      GPA = tokens[0:-1]
 
 		new_student = Student( StLastName, StFirstName, Grade, Classroom,
-		    Bus, GPA, TLastName, TFirstName )
+		    Bus, GPA, "empty", "empty" )
 
 		return new_student
+         
+	def create_teacher( self, lineFromFile ):
+		#takes a single line from the teacher file as a string. Creates a
+		#Teacher object using the information from the line. Returns the
+		#teacher object
+
+		tokens = lineFromFile.split( ',' )
+		TLastName = tokens[0]
+		TFirstName = tokens[1]
+		Classroom = tokens[3]
+      Classroom = tokens[0:-1]
+
+		new_teacher = Teacher( TLastName, TFirstName, Classroom )
+
+		return new_teacher
 
 	def search( self, c, aString = None ):
 		#takes a character representing the student member variable to search
