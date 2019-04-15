@@ -9,7 +9,8 @@ class School:
 		self.student_array = []
 		self.teacher_array = []
          
-         
+
+
 	def populate_teacher_array( self, teacherFile ):
    #takes a file name. Reads in the teachers from the file and puts each
    #teacher into the teacher_array
@@ -47,8 +48,9 @@ class School:
 	def get_teacher_info( self, classroom ):
 		#helper function, searches for correct teacher given classroom returns
 		for teacher in self.teacher_array:
-			if ( teacher.getClassroom == classroom ):
+			if ( teacher.getClassroom() == classroom ):
 				return teacher
+		return Teacher("empty", "empty", "empty")
 
 	def create_student( self, lineFromFile ):
 		#takes a single line from the student file as a string. Creates a
@@ -63,9 +65,11 @@ class School:
 		Bus = tokens[4]
 		GPA = tokens[5]
 		GPA = tokens[0:-1]
+		Teach = self.get_teacher_info(Classroom)
+      
 
 		new_student = Student( StLastName, StFirstName, Grade, Classroom,
-		    Bus, GPA, "empty", "empty" )
+		    Bus, GPA, Teach.getLastName(), Teach.getFirstName() )
 
 		return new_student
          
