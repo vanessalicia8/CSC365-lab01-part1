@@ -2,7 +2,7 @@ from School import *
 from Student import *
 
 def prompt():
-   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
+   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number> [T[eacher]]\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
    return command
 
 def main():
@@ -62,7 +62,12 @@ def main():
          the_school.grade_info()
       #Classroom
       elif ( values[0] == "C" or values[0] == "Classroom" ):
-         the_school.search( 'C', values[1] )
+         if ( len( values ) == 3 and ( values[2] == "T" or 
+            values[2] == "Teacher" ) ):
+
+            the_school.teacher_search( 'C', values[1] )
+         else:
+            the_school.search( 'C', values[1] )
 
 
 if __name__ == "__main__":

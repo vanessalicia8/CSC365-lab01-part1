@@ -88,6 +88,13 @@ class School:
 
 		return new_teacher
 
+	def teacher_search( self, c, aString = None ):
+		#
+
+		for teacher in self.teacher_array:
+			if ( c == 'C' and teacher.getClassroom() == aString ):
+				print( "\n" + teacher.to_String() + "\n" );
+
 	def search( self, c, aString = None ):
 		#takes a character representing the student member variable to search
 		#by and a string representing the optional name or number field,

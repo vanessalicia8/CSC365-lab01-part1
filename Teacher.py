@@ -19,3 +19,7 @@ class Teacher:
 
 	def getClassroom( self ):
 		return self.Classroom
+
+	def to_String( self ):
+		return ( "Teacher: " + self.TLastName + ", " + 
+					self.TFirstName )
