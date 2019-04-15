@@ -1,14 +1,3 @@
-found error in the way students searched by G[rade] H[igh] were being displayed. Wrote new print statement to fix.
+1) error in the way the GPA value was being put into the student objects. This was due to the way we tokenized the lines from the file, which didn't work the same on the new file. Found by Vanessa, fixed by Ashley, roughly 20 min.
 
-when fixing above error, part of the new print statement prints on a separate line, turned out to be an error with the /n read in from each line in the file
-
-4:53pm 04/08/19 - 
-    Traceback (most recent call last):
-  File "schoolsearch.py", line 56, in <module>
-    main()
-  File "schoolsearch.py", line 49, in main
-    the_school.search( 'A', values[1] )
-  File "/home/ashoover/CSC365/Lab01/forTesting/School.py", line 63, in search
-    print( "\nGrade: " + aString + "\nAverage GPA: " + str(round(allGPA/studentCount, 2)) + "\n" )
-ZeroDivisionError: float division by zero
-fixed at 5.05pm
+2)

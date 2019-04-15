@@ -64,7 +64,7 @@ class School:
 		Classroom = tokens[3]
 		Bus = tokens[4]
 		GPA = tokens[5]
-		GPA = tokens[0:-1]
+		GPA = GPA[0:-1]
 		Teach = self.get_teacher_info(Classroom)
       
 
@@ -166,8 +166,10 @@ class School:
 				if(student.GPA > mystudent.GPA):
 					mystudent = student
 
-			print( "\nStudent: " + mystudent.StLastName + ", " + mystudent.StFirstName + ", " + mystudent.GPA + ", " +\
-				mystudent.TLastName + ", " + mystudent.TFirstName + ", " + mystudent.Bus + "\n" )
+			print( "\nStudent: " + mystudent.StLastName + ", " +
+				mystudent.StFirstName + ", " + mystudent.GPA + ", " +
+				mystudent.TLastName + ", " + mystudent.TFirstName + 
+				", " + mystudent.Bus + "\n" )
 			
 			#print( "\n" + mystudent.to_String() + "\n" )
 
@@ -176,7 +178,7 @@ class School:
 				if(student.GPA < mystudent.GPA):
 					mystudent = student
 
-			print( "\nStudent: " + mystudent.StLastName + ", " + mystudent.StFirstName + ", " + mystudent.GPA + ", " +\
+			print( "\nStudent: " + mystudent.StLastName + ", " + mystudent.StFirstName + ", " + mystudent.GPA + ", " +
 				mystudent.TLastName + ", " + mystudent.TFirstName + ", " + mystudent.Bus + "\n" )
 			
 			#print( "\n" + mystudent.to_String() + "\n" )
