@@ -2,7 +2,7 @@ from School import *
 from Student import *
 
 def prompt():
-   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
+   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number>\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nQ[uit]\n")
    return command
 
 def main():
@@ -60,6 +60,9 @@ def main():
       #Info
       elif ( values[0] == "I" or values[0] == "Info" ):
          the_school.grade_info()
+      #Classroom
+      elif ( values[0] == "C" or values[0] == "Classroom" ):
+         the_school.search( 'C', values[1] )
 
 
 if __name__ == "__main__":

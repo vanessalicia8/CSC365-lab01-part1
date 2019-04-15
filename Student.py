@@ -26,7 +26,8 @@ class Student:
 		#return, returns that value
 
 		member_vars = {'S': self.StLastName, 'T': self.TLastName, 
-		    'G': self.Grade, 'B': self.Bus, 'A': self.GPA }
+		    'G': self.Grade, 'B': self.Bus, 'A': self.GPA, 
+		    'C': self.Classroom }
 
 		if c in member_vars:
 			return member_vars[c]

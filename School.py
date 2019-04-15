@@ -123,6 +123,8 @@ class School:
 				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName + "\n" )
 			elif(c == "B"):
 				print( "\nStudent: " + student.StLastName + ", " + student.StFirstName  + ", " + student.Grade + ", " + student.Classroom + "\n" )
+			elif ( c == "C" ):
+				print( "\n", student.to_String(), "\n" )
 
 		if len(students) == 0:
 			print( "\n" )
