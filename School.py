@@ -82,9 +82,9 @@ class School:
 		TLastName = tokens[0]
 		TFirstName = tokens[1]
 		Classroom = tokens[2]
-		Classroom = tokens[0:-1]
+		#Classroom = Classroom[0:-1]
 
-		new_teacher = Teacher( TLastName, TFirstName, Classroom )
+		new_teacher = Teacher( TLastName, TFirstName, Classroom.strip() )
 
 		return new_teacher
 
