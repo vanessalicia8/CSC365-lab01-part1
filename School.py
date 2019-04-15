@@ -44,6 +44,12 @@ class School:
 	    except:
 	    	raise
 
+	def get_teacher_info( self, classroom ):
+		#helper function, searches for correct teacher given classroom returns
+		for teacher in self.teacher_array:
+			if ( teacher.getClassroom == classroom ):
+				return teacher
+
 	def create_student( self, lineFromFile ):
 		#takes a single line from the student file as a string. Creates a
 		#Student object using the information from the line. Returns the 
