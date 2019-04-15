@@ -89,7 +89,8 @@ class School:
 		return new_teacher
 
 	def teacher_search( self, c, aString = None ):
-		#
+		#takes a character and an optional string. Searches the teacher
+		#array and prints the teacher information found.
 
 		for teacher in self.teacher_array:
 			if ( c == 'C' and teacher.getClassroom() == aString ):
