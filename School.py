@@ -95,6 +95,9 @@ class School:
 		for teacher in self.teacher_array:
 			if ( c == 'C' and teacher.getClassroom() == aString ):
 				print( "\n" + teacher.to_String() + "\n" );
+			elif ( c == 'G' and teacher.getGrade() == aString ):
+				print( "\n" + teacher.to_String() + "\n" );
+
 
 	def search( self, c, aString = None ):
 		#takes a character representing the student member variable to search
@@ -228,6 +231,18 @@ class School:
 		print( "\nGrade 5: " + str(fifth) )
 		print( "\nGrade 6: " + str(sixth) + "\n" )
 		return
+
+	def add_more_teacher_info( self ):
+		#
+
+		for teacher in self.teacher_array:
+			for student in self.student_array:
+
+				if ( teacher.TLastName == student.TLastName and 
+					teacher.Classroom == student.Classroom ):
+
+					teacher.Grade = student.Grade
+					break
 
 
 

@@ -19,6 +19,8 @@ def main():
        print( "File was not found.\n" )
        return
 
+   the_school.add_more_teacher_info()
+
 
    search_val = ""
 
@@ -50,6 +52,8 @@ def main():
          if (len(values) == 3):
             if(values[2] == "H" or values[2] == "L" or values[2] == "High" or values[2] == "Low"):
                the_school.grade_search( values[1], values[2] )
+            elif ( values[2] == "T" or values[2] == "Teacher" ):
+               the_school.teacher_search( "G", values[1] )
             else:
                print( "\n" + values[2] + " is not a valid command\n" )
          else:

@@ -5,6 +5,7 @@ class Teacher:
 	    self.TLastName = TLastName
 	    self.TFirstName = TFirstName
 	    self.Classroom = Classroom
+	    self.Grade = None
 
 	def __repr__( self ):
 
@@ -19,6 +20,9 @@ class Teacher:
 
 	def getClassroom( self ):
 		return self.Classroom
+
+	def getGrade( self ):
+		return self.Grade
 
 	def to_String( self ):
 		return ( "Teacher: " + self.TLastName + ", " + 
