@@ -269,7 +269,8 @@ class School:
 
 		for student in studentList:
 
-			sum += student.GPA
+			sum += float( student.GPA )
+			#print( student.GPA )
 
 		if ( sum != 0 ):
 			average = sum / len( studentList )
@@ -283,12 +284,12 @@ class School:
 
 		if ( grade == teacher == busRoute == None ):
 
-			for num in range( 6 ):
+			for num in range( 7 ):
 				for student in self.student_array:
-					if (student.Grade == num ):
+					if ( student.Grade == str( num ) ):
 						studentList.append( student )
 
-				print( "Grade: " + str( num ) + str( 
+				print( "Grade " + str( num ) + ": " + str( 
 					self.compute_average_GPA( studentList ) ) )
 
 

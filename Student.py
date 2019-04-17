@@ -13,6 +13,9 @@ class Student:
 		self.TLastName = TLastName
 		self.TFirstName = TFirstName
 
+		if ( self.GPA == '' ):
+			self.GPA = 0.0
+
 	def __repr__( self ):
 		return ( "Student: {!r}, {!r} {!r} {!r} {!r} {!r} {!r}, {!r} " ).format(
 			self.StLastName, self.StFirstName, self.Grade, self.Classroom,
