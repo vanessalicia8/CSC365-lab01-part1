@@ -76,7 +76,14 @@ def main():
          the_school.print_enrollment()
       #Analytics
       elif ( values[0] == "An" or values[0] == "Analytics" ):
-         the_school.analyze()
+         if ( len( values ) == 2 ):
+            if ( values[1] == "T" or values[1] == "Teacher" ):
+               the_school.analyze( "T" )
+            elif ( values[1] == "B" or values[1] == "Bus" ):
+               the_school.analyze( "B" )
+         else:
+            the_school.analyze()
+
 #print("call function"); #pass value[1] to new function
 
 

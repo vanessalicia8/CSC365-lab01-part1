@@ -275,24 +275,62 @@ class School:
 		if ( sum != 0 ):
 			average = sum / len( studentList )
 
-		return average
+		return round( average, 2 )
 
-	def analyze( self, grade = None, teacher = None, busRoute = None ):
+	def analyze( self, optionalVal = None ):
 		#
 
-		studentList = []
+		busRoutes = []
 
-		if ( grade == teacher == busRoute == None ):
+		if ( optionalVal == None ):
+
+			print()
 
 			for num in range( 7 ):
+				studentList = []
 				for student in self.student_array:
 					if ( student.Grade == str( num ) ):
+
 						studentList.append( student )
 
 				print( "Grade " + str( num ) + ": " + str( 
 					self.compute_average_GPA( studentList ) ) )
 
+			print()
 
+		elif ( optionalVal == "T" or optionalVal == "Teacher" ):
 
+			print()
 
+			for teacher in self.teacher_array:
+				studentList = []
+				for student in self.student_array:
+					if ( student.Classroom == teacher.Classroom ):
+						
+						studentList.append( student )
 
+				print( "Teacher: " + teacher.TLastName + " Room " + 
+					teacher.Classroom + ": " + str( 
+						self.compute_average_GPA( studentList ) ) )
+
+			print()
+
+		elif ( optionalVal == "B" or optionalVal == "Bus" ):
+
+			for student in self.student_array:
+				if ( student.Bus not in busRoutes ):
+					busRoutes.append( student.Bus )
+
+			print()
+
+			for bus in busRoutes:
+				studentList = []
+				for student in self.student_array:
+					if ( bus == student.Bus ):
+						studentList.append( student )
+
+				print( "Bus route " + bus + ": GPA " + str( 
+					self.compute_average_GPA( studentList ) ) )
+				studentList = []
+
+			print()
