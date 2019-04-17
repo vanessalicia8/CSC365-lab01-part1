@@ -9,8 +9,6 @@ class School:
 		self.student_array = []
 		self.teacher_array = []
          
-
-
 	def populate_teacher_array( self, teacherFile ):
    #takes a file name. Reads in the teachers from the file and puts each
    #teacher into the teacher_array
@@ -27,6 +25,8 @@ class School:
 	    				self.teacher_array.append( teacher )
 	    except:
 	    	raise
+
+	    self.teacher_array.sort( key = lambda teacher: teacher.Classroom )
 
 	def populate_student_array( self, studentFile ):
 	#takes a file name. Reads in the students from the file and puts each
@@ -244,5 +244,19 @@ class School:
 					teacher.Grade = student.Grade
 					break
 
+		for teacher in self.teacher_array:
+			for student in self.student_array:
 
+				if ( student.Classroom == teacher.Classroom ):
+					teacher.num_students += 1;
 
+	def print_enrollment( self ):
+		#
+		print( "\nEnrollment by Classroom \n" )
+
+		for teacher in self.teacher_array:
+
+			print( "Room#: " + teacher.Classroom + ", " +
+				str( teacher.num_students ) )
+
+		print( "\n" )

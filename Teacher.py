@@ -6,6 +6,7 @@ class Teacher:
 	    self.TFirstName = TFirstName
 	    self.Classroom = Classroom
 	    self.Grade = None
+	    self.num_students = 0
 
 	def __repr__( self ):
 
