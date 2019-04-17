@@ -260,3 +260,38 @@ class School:
 				str( teacher.num_students ) )
 
 		print( "\n" )
+
+	def compute_average_GPA( self, studentList ):
+		#
+
+		sum = 0
+		average = 0
+
+		for student in studentList:
+
+			sum += student.GPA
+
+		if ( sum != 0 ):
+			average = sum / len( studentList )
+
+		return average
+
+	def analyze( self, grade = None, teacher = None, busRoute = None ):
+		#
+
+		studentList = []
+
+		if ( grade = teacher = busRoute = None ):
+
+			for num in range( 6 ):
+				for student in self.student_array:
+					if ( self.student_array.Grade = num ):
+						studentList.append( student )
+
+				print( "Grade: " + str( num ) + str( 
+					self.compute_average_GPA( studentList ) ) )
+
+
+
+
+
