@@ -2,7 +2,7 @@ from School import *
 from Student import *
 
 def prompt():
-   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number> [T[eacher]]\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]|T[eacher]]\nA[verage]: <number>\nI[nfo]\nE[nrollment]\nQ[uit]\n")
+   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number> [T[eacher]]\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]|T[eacher]]\nA[verage]: <number>\nAn[alytics]: G[rade]|T[eacher]|B[us]\nI[nfo]\nE[nrollment]\nQ[uit]\n")
    return command
 
 def main():
@@ -74,6 +74,10 @@ def main():
       #Enrollment
       elif ( values[0] == "E" or values[0] == "Enrollment" ):
          the_school.print_enrollment()
+      #Analytics
+      elif ( values[0] == "An" or values[0] == "Analytics" ):
+         the_school.analyze()
+#print("call function"); #pass value[1] to new function
 
 
 if __name__ == "__main__":

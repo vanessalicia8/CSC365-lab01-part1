@@ -281,11 +281,11 @@ class School:
 
 		studentList = []
 
-		if ( grade = teacher = busRoute = None ):
+		if ( grade == teacher == busRoute == None ):
 
 			for num in range( 6 ):
 				for student in self.student_array:
-					if ( self.student_array.Grade = num ):
+					if (student.Grade == num ):
 						studentList.append( student )
 
 				print( "Grade: " + str( num ) + str( 
