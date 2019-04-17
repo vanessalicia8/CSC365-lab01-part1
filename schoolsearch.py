@@ -2,7 +2,7 @@ from School import *
 from Student import *
 
 def prompt():
-   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number> [T[eacher]]\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]]\nA[verage]: <number>\nI[nfo]\nE[nrollment]\nQ[uit]\n")
+   command = input("S[tudent]: <lastname> [B[us]]\nT[eacher]: <lastname>\nC[lassroom]: <number> [T[eacher]]\nB[us]: <number>\nG[rade]: <number> [H[igh]|L[ow]|T[eacher]]\nA[verage]: <number>\nI[nfo]\nE[nrollment]\nQ[uit]\n")
    return command
 
 def main():
