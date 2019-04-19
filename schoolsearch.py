@@ -81,10 +81,14 @@ def main():
                the_school.analyze( "T" )
             elif ( values[1] == "B" or values[1] == "Bus" ):
                the_school.analyze( "B" )
+            elif ( values[1] == "G" or values[1] == "Grade" ):
+               the_school.analyze( "G" )
+            else:
+               print( "\n" + values[1] + " is not a valid command\n" )
+   
          else:
             the_school.analyze()
 
-#print("call function"); #pass value[1] to new function
 
 
 if __name__ == "__main__":

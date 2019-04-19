@@ -282,7 +282,7 @@ class School:
 
 		busRoutes = []
 
-		if ( optionalVal == None ):
+		if ( optionalVal == None or optionalVal == "G" or optionalVal == "Grade" ):
 
 			print()
 
