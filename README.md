@@ -3,7 +3,7 @@
 To compile/run this program: "python3 schoolsearch.py"
 
 
-## New commands: ##
+## New commands:
 
 ### Classroom: <number> [T[eacher]]
   
