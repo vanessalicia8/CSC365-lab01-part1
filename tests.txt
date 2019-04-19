@@ -1,5 +1,5 @@
 // CSC 365. Spring 2019
-// Lab 1-1 test suite
+// Lab 1-2 test suite
 
 // TC-1
 // Tests Requirements R3 and R4
@@ -371,7 +371,7 @@ Info
 Q
 
 // TC-28
-// Tests Requirements R11
+// Tests Requirements R12
 // long form command quit
 // expected output: none
 
@@ -379,8 +379,8 @@ Quit
 
 
 // TC-29
-// Tests Requirements 
-// short form command classroom
+// Tests Requirements NR1
+// short form command classroom, number given
 // expected output:
 
 Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
@@ -390,8 +390,8 @@ Student: VILARDO,  EMMANUEL, 2, 104, 56, 2.88, STEIB,  GALE
 C 104
 
 // TC-30
-// Tests Requirements 
-// long form command classroom
+// Tests Requirements NR1
+// long form command classroom, number given
 // expected output:
 
 Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
@@ -402,8 +402,8 @@ Classroom 104
 
 
 // TC-31
-// Tests Requirements 
-// short form command classroom
+// Tests Requirements NR2
+// short form command classroom, number and teacher option given
 // expected output:
 
 Teacher: STEIB,  GALE
@@ -411,8 +411,8 @@ Teacher: STEIB,  GALE
 C 104 T
 
 // TC-32
-// Tests Requirements 
-// long form command classroom
+// Tests Requirements NR2
+// long form command classroom, number and teacher option given
 // expected output:
 
 Teacher: STEIB,  GALE
@@ -421,8 +421,8 @@ Classroom 104 Teacher
 
 
 // TC-33
-// Tests Requirements 
-// short form command grade
+// Tests Requirements NR3
+// short form command grade, number and teacher option given
 // expected output:
 
 Teacher: STEIB,  GALE
@@ -432,8 +432,8 @@ Teacher: HAMER,  GAVIN
 G 2 T
 
 // TC-34
-// Tests Requirements 
-// long form command grade
+// Tests Requirements NR3
+// long form command grade, number and teacher option given
 // expected output:
 
 Teacher: STEIB,  GALE
@@ -444,122 +444,7 @@ Grade 2 Teacher
 
 
 // TC-35
-// Tests Requirements 
-// short form command analytics
-// expected output:
-
-Grade 0: 0
-Grade 1: 3.0
-Grade 2: 2.95
-Grade 3: 3.05
-Grade 4: 2.75
-Grade 5: 0
-Grade 6: 2.98
-
-An G
-
-// TC-36
-// Tests Requirements 
-// long form command analytics
-// expected output:
-
-Grade 0: 0
-Grade 1: 3.0
-Grade 2: 2.95
-Grade 3: 3.05
-Grade 4: 2.75
-Grade 5: 0
-Grade 6: 2.98
-
-Analytics Grade
-
-
-// TC-37
-// Tests Requirements 
-// short form command analytics
-// expected output:
-
-Teacher: COOL Room 101: 2.91
-Teacher: KERBS Room 102: 2.98
-Teacher: FALKER Room 103: 3.0
-Teacher: STEIB Room 104: 2.9
-Teacher: HANTZ Room 105: 2.91
-Teacher: BODZIONY Room 106: 3.09
-Teacher: FAFARD Room 107: 3.01
-Teacher: HAMER Room 108: 2.95
-Teacher: GAMBREL Room 109: 2.96
-Teacher: ALPERT Room 110: 3.17
-Teacher: NISTENDIRK Room 111: 2.96
-Teacher: CHIONCHIO Room 112: 2.61
-
-An T
-
-// TC-38
-// Tests Requirements 
-// long form command analytics
-// expected output:
-
-Teacher: COOL Room 101: 2.91
-Teacher: KERBS Room 102: 2.98
-Teacher: FALKER Room 103: 3.0
-Teacher: STEIB Room 104: 2.9
-Teacher: HANTZ Room 105: 2.91
-Teacher: BODZIONY Room 106: 3.09
-Teacher: FAFARD Room 107: 3.01
-Teacher: HAMER Room 108: 2.95
-Teacher: GAMBREL Room 109: 2.96
-Teacher: ALPERT Room 110: 3.17
-Teacher: NISTENDIRK Room 111: 2.96
-Teacher: CHIONCHIO Room 112: 2.61
-
-Analytics Teacher
-
-// TC-39
-// Tests Requirements 
-// short form command analytics
-// expected output:
-
-Bus route 52: GPA 2.88
-Bus route 0: GPA 2.95
-Bus route 56: GPA 2.92
-Bus route 51: GPA 3.02
-Bus route 53: GPA 2.72
-Bus route 55: GPA 3.04
-Bus route 54: GPA 2.94
-
-A B
-
-// TC-40
-// Tests Requirements 
-// long form command analytics
-// expected output:
-
-Bus route 52: GPA 2.88
-Bus route 0: GPA 2.95
-Bus route 56: GPA 2.92
-Bus route 51: GPA 3.02
-Bus route 53: GPA 2.72
-Bus route 55: GPA 3.04
-Bus route 54: GPA 2.94
-
-Analytics Bus
-
-// TC-41
-// Tests Requirements 
-// short form command analytics
-// expected output: S is not a valid argument
-
-An S
-
-// TC-42
-// Tests Requirements 
-// long form command analytics
-// expected output: S is not a valid argument
-
-Analytics S
-
-// TC-43
-// Tests Requirements 
+// Tests Requirements NR4
 // short form command enrollment
 // expected output: 
 
@@ -580,8 +465,8 @@ Room#: 112, 8
 
 E
 
-// TC-44
-// Tests Requirements 
+// TC-36
+// Tests Requirements NR4
 // long form command enrollment
 // expected output:
 
@@ -603,4 +488,118 @@ Room#: 112, 8
 Enrollment
 
 
+// TC-37
+// Tests Requirements NR5
+// short form command analytics, grade option given
+// expected output:
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+An G
+
+// TC-38
+// Tests Requirements NR5
+// long form command analytics, grade option given
+// expected output:
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+Analytics Grade
+
+
+// TC-39
+// Tests Requirements NR5
+// short form command analytics, teacher option given
+// expected output:
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+An T
+
+// TC-40
+// Tests Requirements NR5
+// long form command analytics, teacher option given
+// expected output:
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+Analytics Teacher
+
+// TC-41
+// Tests Requirements NR5
+// short form command analytics, bus option given
+// expected output:
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+A B
+
+// TC-42
+// Tests Requirements NR5
+// long form command analytics, bus option given
+// expected output:
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+Analytics Bus
+
+// TC-43
+// Tests Requirements E1
+// short form command analytics, invalid option given
+// expected output: S is not a valid argument
+
+An S
+
+// TC-44
+// Tests Requirements E1
+// long form command analytics, invalid option given
+// expected output: S is not a valid argument
+
+Analytics S
 
