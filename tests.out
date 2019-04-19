@@ -1,30 +1,20 @@
 Student: OBREIN, STAN, 6, 111 ,NISTENDIRK, NANCY
 
-OBREIN, STAN, 6, 111, NISTENDIRK,NANCY
+Student: OBREIN, STAN, 6, 111, NISTENDIRK, NANCY
+
 
 Student: SARAO, DIEDRA, 52
 
 Student: SARAO, DIEDRA, 52
 
+
 Student: COMO, ZANDRA, 53
 
 Student: COMO, ZANDRA, 53
+
 
 Student: BUS is not a valid command
 
-Student: COOKUS, XUAN
-
-Student: ELHADDAD, SHANTE
-
-Student: SWEDLUND, SHARRI
-
-Student: CIGANEK, MANIE
-
-Student: COVINGTON, TOMAS
-
-Student: EARLY, TORY
-
-Student: LINHART, LELA
 
 Student: COOKUS, XUAN
 
@@ -39,6 +29,21 @@ Student: COVINGTON, TOMAS
 Student: EARLY, TORY
 
 Student: LINHART, LELA
+
+Student: COOKUS, XUAN
+
+Student: ELHADDAD, SHANTE
+
+Student: SWEDLUND, SHARRI
+
+Student: CIGANEK, MANIE
+
+Student: COVINGTON, TOMAS
+
+Student: EARLY, TORY
+
+Student: LINHART, LELA
+
 
 Student: SCHOENECKER, PHUONG
 
@@ -82,6 +87,7 @@ Student: KREESE, CARRIE
 
 Student: FRIEDSTROM, REED
 
+
 Student: SCHOENECKER, PHUONG
 
 Student: RACANELLO, NOEL
@@ -123,6 +129,7 @@ Student: LAMKIN, TAMA
 Student: KREESE, CARRIE
 
 Student: FRIEDSTROM, REED
+
 
 Student: SWEDLUND, SHARRI, 3, 107
 
@@ -142,6 +149,7 @@ Student: WERST, LEON, 6, 111
 
 Student: LAMKIN, TAMA, 6, 111
 
+
 Student: SCHOENECKER, PHUONG, 6, 109
 
 Student: FINCHMAN, MATHILDA, 6, 111
@@ -158,13 +166,16 @@ Student: CREMEANS, RANDOLPH, 6, 109
 
 Student: KREESE, CARRIE, 6, 109
 
+
 LAMKIN, TAMA, 3.23, NISTENDIRK, NANCY, 55
 
 LAMKIN, TAMA, 3.23, NISTENDIRK, NANCY, 55
+
 
 WICINSKY, TERESE, 3.22, HAMER, GAVIN, 53
 
 WICINSKY, TERESE, 3.22, HAMER, GAVIN, 53
+
 
 KOZOLA, BUSTER, 2.76, HAMER, GAVIN, 55
 
@@ -182,19 +193,6 @@ Average GPA: 3.05
 Grade: 6
 Average GPA: 2.98
 
-Grade 0: 0
-
-Grade 1: 2
-
-Grade 2: 13
-
-Grade 3: 9
-
-Grade 4: 15
-
-Grade 5: 0
-
-Grade 6: 21
 
 Grade 0: 0
 
@@ -209,6 +207,134 @@ Grade 4: 15
 Grade 5: 0
 
 Grade 6: 21
+
+
+Grade 0: 0
+
+Grade 1: 2
+
+Grade 2: 13
+
+Grade 3: 9
+
+Grade 4: 15
+
+Grade 5: 0
+
+Grade 6: 21
+
+
+Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
+
+Student: VILARDO,  EMMANUEL, 2, 104, 56, 2.88, STEIB,  GALE
+
+
+Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
+
+Student: VILARDO,  EMMANUEL, 2, 104, 56, 2.88, STEIB,  GALE
+
+
+Teacher: STEIB,  GALE
+
+Teacher: STEIB,  GALE
+
+
+Teacher: STEIB,  GALE
+
+Teacher: HAMER,  GAVIN
+
+
+Teacher: STEIB,  GALE
+
+Teacher: HAMER,  GAVIN
+
+Room#: 101, 1
+Room#: 102, 5
+Room#: 103, 2
+Room#: 104, 2
+Room#: 105, 6
+Room#: 106, 2
+Room#: 107, 7
+Room#: 108, 11
+Room#: 109, 5
+Room#: 110, 2
+Room#: 111, 9
+Room#: 112, 8
+
+Room#: 101, 1
+Room#: 102, 5
+Room#: 103, 2
+Room#: 104, 2
+Room#: 105, 6
+Room#: 106, 2
+Room#: 107, 7
+Room#: 108, 11
+Room#: 109, 5
+Room#: 110, 2
+Room#: 111, 9
+Room#: 112, 8
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+S is not a valid argument
+
+S is not a valid argument
 
 
 

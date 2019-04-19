@@ -11,7 +11,7 @@ S OBREIN
 // TC-2
 // Tests Requirements R3 and R4
 // long form command name, existing student
-// expected output: Student: OBREIN, STAN, 6, 111, NISTENDIRK,NANCY
+// expected output: Student: OBREIN, STAN, 6, 111, NISTENDIRK, NANCY
 
 Student OBREIN
 
