@@ -378,14 +378,229 @@ Q
 Quit
 
 
+// TC-29
+// Tests Requirements 
+// short form command classroom
+// expected output:
+
+Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
+
+Student: VILARDO,  EMMANUEL, 2, 104, 56, 2.88, STEIB,  GALE
+
+C 104
+
+// TC-30
+// Tests Requirements 
+// long form command classroom
+// expected output:
+
+Student: WOOLERY,  NOLAN, 2, 104, 51, 2.92, STEIB,  GALE 
+
+Student: VILARDO,  EMMANUEL, 2, 104, 56, 2.88, STEIB,  GALE
+
+Classroom 104
 
 
+// TC-31
+// Tests Requirements 
+// short form command classroom
+// expected output:
+
+Teacher: STEIB,  GALE
+
+C 104 T
+
+// TC-32
+// Tests Requirements 
+// long form command classroom
+// expected output:
+
+Teacher: STEIB,  GALE
+
+Classroom 104 Teacher
 
 
+// TC-33
+// Tests Requirements 
+// short form command grade
+// expected output:
+
+Teacher: STEIB,  GALE
+
+Teacher: HAMER,  GAVIN
+
+G 2 T
+
+// TC-34
+// Tests Requirements 
+// long form command grade
+// expected output:
+
+Teacher: STEIB,  GALE
+
+Teacher: HAMER,  GAVIN
+
+Grade 2 Teacher
 
 
+// TC-35
+// Tests Requirements 
+// short form command analytics
+// expected output:
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+An G
+
+// TC-36
+// Tests Requirements 
+// long form command analytics
+// expected output:
+
+Grade 0: 0
+Grade 1: 3.0
+Grade 2: 2.95
+Grade 3: 3.05
+Grade 4: 2.75
+Grade 5: 0
+Grade 6: 2.98
+
+Analytics Grade
 
 
+// TC-37
+// Tests Requirements 
+// short form command analytics
+// expected output:
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+An T
+
+// TC-38
+// Tests Requirements 
+// long form command analytics
+// expected output:
+
+Teacher: COOL Room 101: 2.91
+Teacher: KERBS Room 102: 2.98
+Teacher: FALKER Room 103: 3.0
+Teacher: STEIB Room 104: 2.9
+Teacher: HANTZ Room 105: 2.91
+Teacher: BODZIONY Room 106: 3.09
+Teacher: FAFARD Room 107: 3.01
+Teacher: HAMER Room 108: 2.95
+Teacher: GAMBREL Room 109: 2.96
+Teacher: ALPERT Room 110: 3.17
+Teacher: NISTENDIRK Room 111: 2.96
+Teacher: CHIONCHIO Room 112: 2.61
+
+Analytics Teacher
+
+// TC-39
+// Tests Requirements 
+// short form command analytics
+// expected output:
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+A B
+
+// TC-40
+// Tests Requirements 
+// long form command analytics
+// expected output:
+
+Bus route 52: GPA 2.88
+Bus route 0: GPA 2.95
+Bus route 56: GPA 2.92
+Bus route 51: GPA 3.02
+Bus route 53: GPA 2.72
+Bus route 55: GPA 3.04
+Bus route 54: GPA 2.94
+
+Analytics Bus
+
+// TC-41
+// Tests Requirements 
+// short form command analytics
+// expected output: S is not a valid argument
+
+An S
+
+// TC-42
+// Tests Requirements 
+// long form command analytics
+// expected output: S is not a valid argument
+
+Analytics S
+
+// TC-43
+// Tests Requirements 
+// short form command enrollment
+// expected output: 
+
+Enrollment by Classroom 
+
+Room#: 101, 1
+Room#: 102, 5
+Room#: 103, 2
+Room#: 104, 2
+Room#: 105, 6
+Room#: 106, 2
+Room#: 107, 7
+Room#: 108, 11
+Room#: 109, 5
+Room#: 110, 2
+Room#: 111, 9
+Room#: 112, 8
+
+E
+
+// TC-44
+// Tests Requirements 
+// long form command enrollment
+// expected output:
+
+Enrollment by Classroom 
+
+Room#: 101, 1
+Room#: 102, 5
+Room#: 103, 2
+Room#: 104, 2
+Room#: 105, 6
+Room#: 106, 2
+Room#: 107, 7
+Room#: 108, 11
+Room#: 109, 5
+Room#: 110, 2
+Room#: 111, 9
+Room#: 112, 8
+
+Enrollment
 
 
 
